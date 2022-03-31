@@ -15,7 +15,6 @@ class StaffList extends Component {
     onStaffSelect(staff) {
         this.setState({ selectedStaff: staff })
     }
-
     renderStaff(staff) {
         if (staff != null) {
             return (
@@ -43,9 +42,6 @@ class StaffList extends Component {
 
         const staffList = this.props.staffs.map((staff) => {
             return (
-
-
-
                 <div key={staff.id} className={this.props.col}>
                     <Card onClick={() => this.onStaffSelect(staff)}>
                         <CardTitle className="text-center"> {staff.name} </CardTitle>
