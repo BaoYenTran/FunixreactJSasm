@@ -39,19 +39,19 @@ class StaffList extends Component {
     }
     render() {
         console.log(this.props.col);
-       
-    
+
+
         const staffList = this.props.staffs.map((staff) => {
             return (
-           
-                
 
-                <div key={staff.id} className = {this.props.col}>
+
+
+                <div key={staff.id} className={this.props.col}>
                     <Card onClick={() => this.onStaffSelect(staff)}>
                         <CardTitle className="text-center"> {staff.name} </CardTitle>
                     </Card>
                 </div>
-   
+
 
 
             );
@@ -59,7 +59,7 @@ class StaffList extends Component {
 
         return (
             <div>
-               
+
                 <div className="container-fluid">
                     <div className="row">
                         {staffList}

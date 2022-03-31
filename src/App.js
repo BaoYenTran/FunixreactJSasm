@@ -34,10 +34,10 @@ class App extends Component {
           </div>
         </Navbar>
         <div>
-                <button onClick={this.split2Columns} className="btn-warning">Chia 2 cột</button>
-                <button onClick={this.split3Columns} className="btn-danger">Chia 3 cột </button>
-                <button onClick={this.split6Columns} className="btn-info"  >Chia 6 cột </button>
-            </div>
+          <button onClick={this.split2Columns} className="btn-warning">Chia 2 cột</button>
+          <button onClick={this.split3Columns} className="btn-danger">Chia 3 cột </button>
+          <button onClick={this.split6Columns} className="btn-info"  >Chia 6 cột </button>
+        </div>
 
 
         <StaffList staffs={this.state.staffs} col={this.state.className} />
