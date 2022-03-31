@@ -47,10 +47,7 @@ class StaffList extends Component {
                         <CardTitle className="text-center"> {staff.name} </CardTitle>
                     </Card>
                 </div>
-
-
-
-            );
+            )
         });
 
         return (
