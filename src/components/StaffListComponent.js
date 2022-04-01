@@ -1,6 +1,5 @@
-import React, { Component, Fragment } from 'react';
-
-import { Card, CardTitle, CardText } from 'reactstrap';
+import React, { Component} from 'react';
+import { Card, CardTitle, CardText,CardImg } from 'reactstrap';
 import dateFormat from 'dateformat';
 
 class StaffList extends Component {
@@ -37,14 +36,14 @@ class StaffList extends Component {
         }
     }
     render() {
-        console.log(this.props.col);
-
-
+    
         const staffList = this.props.staffs.map((staff) => {
             return (
-                <div key={staff.id} className={this.props.col}>
+                <div key={staff.id} className="col-6 col-md-4 col-lg-2 mt-1">
                     <Card onClick={() => this.onStaffSelect(staff)}>
                         <CardTitle className="text-center"> {staff.name} </CardTitle>
+                        <CardImg width="100%" src = {staff.image} alt= {staff.name} />
+                        
                     </Card>
                 </div>
             )
