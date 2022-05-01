@@ -1,0 +1,19 @@
+.navbar-dark {
+    background-color: #8432ac;
+}
+.footer{
+    background-color: #8432ac;
+    
+    
+    color:white;
+
+}
+.nav-link {
+    color:white;
+    font-size:15px;
+   
+}
+.nav-item {
+    list-style-type: none;
+
+}
