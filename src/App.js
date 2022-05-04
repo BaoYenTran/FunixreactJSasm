@@ -1,27 +1,24 @@
 import React, { Component } from 'react';
 import './App.css';
-import { STAFFS } from './shared/staffs.jsx'
-import StaffList from './components/StaffListComponent';
-import { Navbar, NavbarBrand } from 'reactstrap';
+import { BrowserRouter } from 'react-router-dom';
+import Main from './components/MainComponent';
+import { Provider } from 'react-redux';
+import { ConfigureStore } from './redux/configureStore';
+const store = ConfigureStore();
+
 class App extends Component {
 
-  constructor(props) {
-    super(props);
-    this.state = {
-      staffs: STAFFS,
-    };
-  }
-  
+
+
   render() {
     return (
-      <div className="App">
-        <Navbar dark color="primary">
-          <div className="container">
-            <NavbarBrand className="text-center" href="/">ỨNG DỤNG QUẢN LÝ NHÂN SỰ  </NavbarBrand>
+      <Provider store={store}>
+        <BrowserRouter>
+          <div>
+            <Main />
           </div>
-        </Navbar>
-        <StaffList staffs={this.state.staffs} col={this.state.className} />
-      </div>
+        </BrowserRouter>
+      </Provider>
     );
   };
 }

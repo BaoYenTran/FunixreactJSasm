@@ -1,0 +1,41 @@
+.navbar-dark {
+    background-color: #229a74;
+}
+.footer{
+    background-color: #229a74;
+    
+    
+    color:white;
+
+}
+.nav-link {
+    color:white;
+    font-size:15px;
+   
+}
+.nav-item {
+    list-style-type: none;
+
+}
+
+.page-enter {
+    opacity: 0.01;
+    transform: translateX(-100%);
+}
+
+.page-enter-active {
+    opacity: 1;
+    transform: translateX(0%);
+    transition: all 300ms ease-in;
+}
+
+.page-exit {
+    opacity: 1;
+    transform: translateX(0%);
+}
+
+.page-exit-active {
+    opacity: 0.01;
+    transform: translateX(100%);
+    transition: all 300ms ease-out;
+}
